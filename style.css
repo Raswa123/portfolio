@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&family=Finlandica+Text:ital,wght@0,100..900;1,100..900&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Quicksand:wght@300..700&family=Sansita+Swashed:wght@300..900&family=VT323&display=swap');*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Times New Roman', Times, serif;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+.links{
+    color: black;
+    text-decoration: none;
+    font-size: 25px;
+    margin: 0px 10px;
+    font-weight: bold;
+}
+/* for the hovering effects in the links placed in navbar */
+.links:hover{
+    color: chocolate;
+    text-decoration: underline;
+}
+#home{
+    display: flex;
+}
+.home-section{
+    height: 450px;
+    width: 50%;
+    margin-top: 250px;
+    margin-left: 100px;
+}
+#fname{
+    font-family: "Caveat", cursive;
+    font-size: 80px;
+}
+#lname{
+    color: coral;
+    font-family: "Caveat", cursive;
+}
+#dwnld{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 10%;
+    text-decoration: none;
+}
+#images{
+    position: relative;
+    margin-top: 120px;
+}
+ .im{
+    width: 30%;
+    position: absolute;
+    transition: transform 2s;
+
+ }
+ h2{
+    font-family: "Dancing Script", cursive;
+    text-align: center;
+ }
+ .home-section:hover #shape{
+    transform: translateY(30px);
+ }
+ .home-section:hover #girl{
+    transform: translateX(-40px);
+ }
+ #about{
+    display: flex;
+ }
+ .about-section{
+    width: 50%;
+    
+ }
+ #lap{
+    width: 70%;
+    margin-left: 90px;
+    height: 400px;
+ }
+ p{
+    font-size: 20px;
+    font-family: "Newsreader", serif;
+    text-align: justify;
+    margin-right: 50px;
+ }
+ #ab{
+    
+    text-align: justify;
+ }
+ #skill-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 40px;
+    align-items: center;
+    gap: 20px;
+ }
+ .bar{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 20px 0px;
+ }
+ .base-bar{
+    width: 100%;
+    height: .6rem;
+    background-color: black;
+    border-radius: .5rem;
+    position: absolute;
+    bottom: 0;
+ }
+ #icon-collections{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0px;
+ }
+ .icon{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: darkgoldenrod;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 10px;
+
+ }
+ .social{
+    color: black;
+ }
+ .social:hover{
+    color: white;
+ }
+ .icon:hover{
+    background-image: linear-gradient(to bottom right, white, yellow, orange, red, blue);
+    animation: rotate 2s;
+ }  
+ @keyframes rotate{
+    0%{transform: rotate(30deg);}
+    25%{transform: rotate(-30deg);}
+    50%{transform: rotate(30deg);}
+    75%{transform: rotate(-30deg);}
+    100%{transform: rotate(30deg);}
+ }
+ footer p{
+   text-align: center;
+   margin: 50px 0px;
+   font-weight: bold;
+
+ }
+ #up-arrow{
+   float: right;
+   margin: -80px 10px 10px 0px;
+ }
+ html{
+   scroll-behavior: smooth;
+ }
+ ::-webkit-scrollbar{
+   width: 10px;
+   border-radius: 20px
+   ;
+ }
